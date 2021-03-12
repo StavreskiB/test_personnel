@@ -1,2 +1,65 @@
 # test_personnel
-Test Project
+
+Before you start importing the script into import.php the following tables and procedure must be created because they are used for the import.
+
+To start the project and import the script in php/import.php
+
+CREATE TABLE users (
+    id_users int NOT NULL auto_increment,
+    username varchar(255) NOT NULL,
+    PRIMARY KEY (id_users)
+);
+
+CREATE TABLE client(
+    id_client int NOT NULL auto_increment,
+    name_client varchar(255) NOT NULL,
+    PRIMARY KEY (id_client)
+);
+
+CREATE TABLE call_type(
+    id_call int NOT NULL auto_increment,
+    type_call varchar(255) NOT NULL,
+    PRIMARY KEY (id_call)
+);
+
+CREATE TABLE details_calls(
+    id_details int NOT NULL auto_increment,
+    name_users int not null,
+    name_client int NOT NULL,
+    type_client int not null,
+    date_call varchar(255) not null,
+    duration int not null,
+    type_call int not null,
+    call_score int not null,
+    PRIMARY KEY (id_details),
+    FOREIGN KEY (name_users) REFERENCES users(id_users),
+    FOREIGN KEY (name_client) REFERENCES client(id_client),
+    FOREIGN KEY (type_client) REFERENCES clint_type(id_type),
+    FOREIGN KEY (type_call) REFERENCES call_type(id_call)
+    );
+    
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `db_personnel_test`.`insert_detail_call`(IN usr 
+
+VARCHAR(255), IN cli varchar(255), IN tli varchar(255), in pdate varchar(255), in duration int, in tcall varchar(255), in call_score INT)
+begin
+	declare userID int;
+	declare clientID int;
+	declare call_typeID int;
+	declare client_typeID int;
+
+	set userID = (select id_users from users where username = usr);
+
+	set clientID = (select id_client from client where name_client = cli);
+
+	set client_typeID = (select id_type from client_type where type_client = tli);
+
+	set call_typeID = (select id_call from call_type where type_call = tcall);
+
+	insert into details_calls(name_users, name_client, type_client, date_call, duration, 
+
+type_call, call_score)
+	values (userID, clientID, client_typeID, pdate, duration, call_typeID, call_score);
+end;
+ 
+   
