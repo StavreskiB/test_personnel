@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511e54e9-e04d-4c20-9929-aca0eed777f5" name="Default Changelist" comment="" />
+    <list default="true" id="511e54e9-e04d-4c20-9929-aca0eed777f5" name="Default Changelist" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,12 +86,24 @@
       <workItem from="1615549493888" duration="12381000" />
       <workItem from="1615578516539" duration="6667000" />
       <workItem from="1615586518276" duration="531000" />
-      <workItem from="1615587068123" duration="956000" />
+      <workItem from="1615587068123" duration="1629000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1615588240021</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615588240021</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="263" y="18" key="#CLI_Interpreters" timestamp="1615427295271">
@@ -107,10 +122,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1615430404178" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1615430430314">
+    <state x="447" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615588682764">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1615430430314" />
+    <state x="447" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1615588682764" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1615588001647">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1615588001647" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1615485693214">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -136,6 +155,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="200" height="441" key="SqlResolveConfigurable/0.0.1366.728@0.0.1366.728" timestamp="1615430040252" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1615588270080">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1615588270080" />
     <state x="541" y="110" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1615430174656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
