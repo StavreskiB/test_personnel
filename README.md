@@ -47,17 +47,11 @@ begin
 	declare clientID int;
 	declare call_typeID int;
 	declare client_typeID int;
-
 	set userID = (select id_users from users where username = usr);
-
 	set clientID = (select id_client from client where name_client = cli);
-
 	set client_typeID = (select id_type from client_type where type_client = tli);
-
 	set call_typeID = (select id_call from call_type where type_call = tcall);
-
 	insert into details_calls(name_users, name_client, type_client, date_call, duration, 
-
 type_call, call_score)
 	values (userID, clientID, client_typeID, pdate, duration, call_typeID, call_score);
 end;
